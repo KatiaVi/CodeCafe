@@ -1,0 +1,189 @@
+.nav {
+    background: #C65400;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+body {
+  background:url("http://mytwitterbackgrounds.com/backgrounds/images/bg_hl2u/3434.jpg") no-repeat center center fixed; 
+  background-size: cover;
+
+
+}
+
+
+.nav a {
+	color: #310D0D;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.nav li {
+  display:inline;
+}
+
+.nav li {
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+.logo img{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.logo img{
+  border-style: outset;
+  border-width: 10px;
+  border-color: #C92124;
+}
+
+.logo img{
+  height: 100px;
+  width: 140px;
+}
+
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } 
+*+html .centered-pills ul.nav-pills { display:inline; } 
+
+.welcome h1 {
+  margin-left: 60px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  font-size: 100px;
+  color:  #800000;
+
+}
+
+.welcome h2{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 500px;
+  color: #291400;
+}
+
+
+.welcome h3{
+  margin-left: 100px;
+  font-size: 30px;
+  color:#291400;
+  font-weight: bold;
+}
+
+
+.welcome h4{
+  margin-left: 750px;
+  font-size: 20px;
+  color:#291400;
+  font-weight: bolder;
+  margin-top: 60px;
+}
+
+
+
+
+/*Infinite Gallery*/
+* {margin: 0; padding: 0;}
+ 
+body {
+
+    <!-- src: http://subtlepatterns.com/?p=1045 -->
+    background: url('dark_geometric.png');
+}
+ 
+
+
+/*keyframe animations*/
+.first {
+
+    -webkit-animation: bannermove 50s linear infinite;
+       -moz-animation: bannermove 50s linear infinite;
+        -ms-animation: bannermove 50s linear infinite;
+         -o-animation: bannermove 50s linear infinite;
+            animation: bannermove 50s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+.photobanner img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+    cursor: pointer;
+ 
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
