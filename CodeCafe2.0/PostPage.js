@@ -7,67 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
 })
 
-/*function printResult(data){
-	var ProjectTitles= [];
-	var fileUploads = [];
-	var Name = [];
-	var Description = [];
-	var out = "";
-	for(var i=0; i< data.length; i++) {
-		alert(i);
-		var postID="post"+i;
-		document.getElementById(postID).innerHTML= data[i].ProjectTitle;
-     
-		ProjectTitles[i]=data[i].ProjectTitle;
-		
-		
-		
-}
-}
-
-*/
-
-/*
-function removePost(){
-
-    document.getElementsByTagName('H1'). innerHTML= 'none';
-    
-
-}
-
-
-function displayShow(id){
-
-    
-    var h= document.createElement("H1");
-    h.id="header";
-    var t = document.createTextNode(document.getElementById(id).textContent);
-    var title=h.appendChild(t);
-    document.getElementById("display").appendChild(title);
-    return h;
-    
-   
-
-	 
-	
-	
-
-}
-
-
-function makeOtherElements(data,id){
-    console.log(data);
-    alert(id);
-    var idNew =String(id);
-    var i = idNew.split("_").pop();
-    var p= document.createElement("P");
-    p.id="name";
-    var t = document.createTextNode(data[i].YourNameFirstandLast);
-    var v=p.appendChild(t);
-    document.getElementById("display").appendChild(v);
-}
-*/
-
 
 function makeUL(data) {
     // Create the list element:
@@ -121,12 +60,12 @@ function makeUL(data) {
     while (target && target.parentNode !== list) {
         target = target.parentNode;
          // If the clicked element isn't a direct child
-        if(!target) { alert("NO");return; } // If element doesn't exist
+        if(!target) { return; } // If element doesn't exist
     }
 
     if (target.tagName === 'DIV'){
-        alert("yes");
-        alert(target.id);
+        
+        console.alert("displaying" + target.id);
 
         if(oldID!='post_'){
             document.getElementById('pTitle').innerHTML = '';
@@ -147,7 +86,6 @@ function makeUL(data) {
         //display other elements
         var id = target.id;
         console.log(data);
-        alert(id);
         var idNew =String(id);
         var i = idNew.split('_').pop();
         
@@ -202,9 +140,5 @@ function makeUL(data) {
 
 });
 
-    
-
-    // Finally, return the constructed list:
-    ;
 }
 
