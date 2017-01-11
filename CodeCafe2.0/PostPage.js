@@ -65,7 +65,7 @@ function makeUL(data) {
 
     if (target.tagName === 'DIV'){
         
-        console.alert("displaying" + target.id);
+        console.log("displaying: "+target.id);
 
         if(oldID!='post_'){
             document.getElementById('pTitle').innerHTML = '';
@@ -140,5 +140,9 @@ function makeUL(data) {
 
 });
 
+    
+
+    // Finally, return the constructed list:
+    ;
 }
 
